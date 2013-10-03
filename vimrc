@@ -17,6 +17,7 @@ call vundle#rc()
 " Vundle bundles
 Bundle 'gmarik/vundle'
 Bundle 'Syntastic'
+Bundle 'flazz/vim-colorschemes'
 
 " Run automatically if vundle was not installed before
 if vundle_installed == 0
@@ -32,6 +33,7 @@ let g:syntastic_php_phpcs_args = '--report=csv --standard=PSR2 --encoding=utf-8'
 syn on
 
 " Sets how many columns a tab spans
+set expandtab
 set tabstop=4
 
 " Sets how many columns to use on indention
@@ -55,6 +57,9 @@ set smartcase
 
 " Center the screen vertically around the cursor
 set so=999
+
+" Colorscheme
+colorscheme nature
 
 let php_htmlInStrings = 1
 
